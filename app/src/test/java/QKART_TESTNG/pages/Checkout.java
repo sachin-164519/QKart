@@ -4,15 +4,15 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Checkout {
-    RemoteWebDriver driver;
+    ChromeDriver driver;
     String url = "https://crio-qkart-frontend-qa.vercel.app/checkout";
 
-    public Checkout(RemoteWebDriver driver) {
+    public Checkout(ChromeDriver driver) {
         this.driver = driver;
     }
 
