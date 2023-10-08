@@ -1,5 +1,6 @@
 package QKART_TESTNG.pages;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -42,7 +43,7 @@ public class Checkout {
             for (WebElement button : buttons) {
                 if (button.getText().equals("ADD")) {
                     button.click();
-                    WebDriverWait wait = new WebDriverWait(driver, 30);
+                    WebDriverWait wait = new WebDriverWait(driver,30);
                     wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(String.format(
                             "//*[@class='MuiTypography-root MuiTypography-body1 css-yg30e6' and text()='%s']",
                             addresString))));
